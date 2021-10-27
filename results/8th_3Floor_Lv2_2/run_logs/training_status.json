@@ -1,0 +1,443 @@
+{
+    "3Floor_Lv1_4": {
+        "checkpoints": [
+            {
+                "steps": 199996,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-199996.onnx",
+                "reward": 0.8146506200234095,
+                "creation_time": 1626608514.6669545,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-199996.pt"
+                ]
+            },
+            {
+                "steps": 399987,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-399987.onnx",
+                "reward": 0.126135665923357,
+                "creation_time": 1626609339.7862222,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-399987.pt"
+                ]
+            },
+            {
+                "steps": 599985,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-599985.onnx",
+                "reward": 0.6284492886983432,
+                "creation_time": 1626610115.7931046,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-599985.pt"
+                ]
+            },
+            {
+                "steps": 799996,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-799996.onnx",
+                "reward": -0.06881751811930112,
+                "creation_time": 1626610896.6364014,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-799996.pt"
+                ]
+            },
+            {
+                "steps": 999965,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-999965.onnx",
+                "reward": null,
+                "creation_time": 1626611715.7598903,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-999965.pt"
+                ]
+            },
+            {
+                "steps": 1199984,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1199984.onnx",
+                "reward": 0.6199278738349676,
+                "creation_time": 1626612538.8708484,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1199984.pt"
+                ]
+            },
+            {
+                "steps": 1399991,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1399991.onnx",
+                "reward": 0.7516357792275292,
+                "creation_time": 1626613388.2133644,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1399991.pt"
+                ]
+            },
+            {
+                "steps": 1599978,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1599978.onnx",
+                "reward": 0.504851558804512,
+                "creation_time": 1626614187.5537162,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1599978.pt"
+                ]
+            },
+            {
+                "steps": 1799958,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1799958.onnx",
+                "reward": 0.6262348548819622,
+                "creation_time": 1626614887.4549901,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1799958.pt"
+                ]
+            },
+            {
+                "steps": 1999990,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1999990.onnx",
+                "reward": null,
+                "creation_time": 1626615629.4813046,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-1999990.pt"
+                ]
+            },
+            {
+                "steps": 2199971,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2199971.onnx",
+                "reward": null,
+                "creation_time": 1626616351.9486325,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2199971.pt"
+                ]
+            },
+            {
+                "steps": 2399986,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2399986.onnx",
+                "reward": null,
+                "creation_time": 1626617058.5208793,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2399986.pt"
+                ]
+            },
+            {
+                "steps": 2599957,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2599957.onnx",
+                "reward": 0.8928227901458741,
+                "creation_time": 1626617790.656363,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2599957.pt"
+                ]
+            },
+            {
+                "steps": 2799999,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2799999.onnx",
+                "reward": 0.37274201679974794,
+                "creation_time": 1626618498.572647,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2799999.pt"
+                ]
+            },
+            {
+                "steps": 2999974,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2999974.onnx",
+                "reward": 1.566281110048294,
+                "creation_time": 1626619197.8320487,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-2999974.pt"
+                ]
+            },
+            {
+                "steps": 3111052,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3111052.onnx",
+                "reward": 0.19132072275335138,
+                "creation_time": 1626619612.6273932,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3111052.pt"
+                ]
+            },
+            {
+                "steps": 3199970,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3199970.onnx",
+                "reward": 1.2781081625393458,
+                "creation_time": 1626684937.6617308,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3199970.pt"
+                ]
+            },
+            {
+                "steps": 3399974,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3399974.onnx",
+                "reward": 1.0364547555263226,
+                "creation_time": 1626685581.1538582,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3399974.pt"
+                ]
+            },
+            {
+                "steps": 3599989,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3599989.onnx",
+                "reward": 1.1800165977329016,
+                "creation_time": 1626686472.2692819,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3599989.pt"
+                ]
+            },
+            {
+                "steps": 3799979,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3799979.onnx",
+                "reward": 0.4231226152994416,
+                "creation_time": 1626687249.4690309,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3799979.pt"
+                ]
+            },
+            {
+                "steps": 3999985,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3999985.onnx",
+                "reward": 0.8999071988676276,
+                "creation_time": 1626688134.3506029,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-3999985.pt"
+                ]
+            },
+            {
+                "steps": 4199994,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4199994.onnx",
+                "reward": 0.7073367293924093,
+                "creation_time": 1626688900.0357919,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4199994.pt"
+                ]
+            },
+            {
+                "steps": 4399979,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4399979.onnx",
+                "reward": 0.9370086088776588,
+                "creation_time": 1626689541.4304705,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4399979.pt"
+                ]
+            },
+            {
+                "steps": 4599973,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4599973.onnx",
+                "reward": 1.0205493214038701,
+                "creation_time": 1626690188.7132297,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4599973.pt"
+                ]
+            },
+            {
+                "steps": 4799995,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4799995.onnx",
+                "reward": 1.5358966588974,
+                "creation_time": 1626690855.2674944,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4799995.pt"
+                ]
+            },
+            {
+                "steps": 4999947,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4999947.onnx",
+                "reward": 1.25098578085502,
+                "creation_time": 1626691634.149764,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-4999947.pt"
+                ]
+            },
+            {
+                "steps": 5199994,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5199994.onnx",
+                "reward": 0.8812459614127874,
+                "creation_time": 1626692453.8626902,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5199994.pt"
+                ]
+            },
+            {
+                "steps": 5399987,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5399987.onnx",
+                "reward": 0.39052956517447124,
+                "creation_time": 1626693232.6046169,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5399987.pt"
+                ]
+            },
+            {
+                "steps": 5599965,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5599965.onnx",
+                "reward": 1.3463936116960313,
+                "creation_time": 1626694044.8585496,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5599965.pt"
+                ]
+            },
+            {
+                "steps": 5799986,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5799986.onnx",
+                "reward": 0.8428067788481712,
+                "creation_time": 1626694905.1806774,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5799986.pt"
+                ]
+            },
+            {
+                "steps": 5999999,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5999999.onnx",
+                "reward": 1.3018114760518074,
+                "creation_time": 1626695641.8668787,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-5999999.pt"
+                ]
+            },
+            {
+                "steps": 6199951,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6199951.onnx",
+                "reward": 1.0389434499666095,
+                "creation_time": 1626696328.4417949,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6199951.pt"
+                ]
+            },
+            {
+                "steps": 6399948,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6399948.onnx",
+                "reward": 0.9791718668171338,
+                "creation_time": 1626696976.096818,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6399948.pt"
+                ]
+            },
+            {
+                "steps": 6599983,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6599983.onnx",
+                "reward": 1.4431437700986862,
+                "creation_time": 1626697631.0436578,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6599983.pt"
+                ]
+            },
+            {
+                "steps": 6799958,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6799958.onnx",
+                "reward": 0.9912820557753245,
+                "creation_time": 1626698303.3415866,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6799958.pt"
+                ]
+            },
+            {
+                "steps": 6999969,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6999969.onnx",
+                "reward": 1.5555443428456783,
+                "creation_time": 1626698975.043502,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-6999969.pt"
+                ]
+            },
+            {
+                "steps": 7199936,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7199936.onnx",
+                "reward": 0.7792272468407949,
+                "creation_time": 1626699683.9906514,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7199936.pt"
+                ]
+            },
+            {
+                "steps": 7399938,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7399938.onnx",
+                "reward": 1.5380504429340363,
+                "creation_time": 1626700335.9127488,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7399938.pt"
+                ]
+            },
+            {
+                "steps": 7599952,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7599952.onnx",
+                "reward": 1.5487177602946758,
+                "creation_time": 1626700984.6204379,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7599952.pt"
+                ]
+            },
+            {
+                "steps": 7799999,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7799999.onnx",
+                "reward": 1.1576957993886687,
+                "creation_time": 1626701642.5671282,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7799999.pt"
+                ]
+            },
+            {
+                "steps": 7999986,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7999986.onnx",
+                "reward": 0.7137216710086379,
+                "creation_time": 1626702297.1708045,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-7999986.pt"
+                ]
+            },
+            {
+                "steps": 8199950,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8199950.onnx",
+                "reward": 0.9322422946492831,
+                "creation_time": 1626702989.0046377,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8199950.pt"
+                ]
+            },
+            {
+                "steps": 8399966,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8399966.onnx",
+                "reward": 1.5546530534823735,
+                "creation_time": 1626703669.279764,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8399966.pt"
+                ]
+            },
+            {
+                "steps": 8599949,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8599949.onnx",
+                "reward": 0.9540734248501914,
+                "creation_time": 1626704330.5458145,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8599949.pt"
+                ]
+            },
+            {
+                "steps": 8799936,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8799936.onnx",
+                "reward": 0.9500705935060978,
+                "creation_time": 1626704985.952577,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8799936.pt"
+                ]
+            },
+            {
+                "steps": 8999950,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8999950.onnx",
+                "reward": 1.0994008304551244,
+                "creation_time": 1626705674.2708042,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-8999950.pt"
+                ]
+            },
+            {
+                "steps": 9000258,
+                "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-9000258.onnx",
+                "reward": 1.1315319693336885,
+                "creation_time": 1626705675.768076,
+                "auxillary_file_paths": [
+                    "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-9000258.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 9000258,
+            "file_path": "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4.onnx",
+            "reward": 1.1315319693336885,
+            "creation_time": 1626705675.768076,
+            "auxillary_file_paths": [
+                "results\\8th_3Floor_Lv2_2\\3Floor_Lv1_4\\3Floor_Lv1_4-9000258.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

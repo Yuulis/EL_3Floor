@@ -1,0 +1,24 @@
+*.vscode
+*.csproj
+*.sln
+*.log
+
+**/App/
+**/UserSettings/
+**/Logs/
+**/Library/
+**/Temp/
+**/obj/
+
+# Additional Assets
+**/Blockout/
+**/TextMesh Pro/
+**/SkySerie Freebie/
+**/ProBuilder Data/
+
+# results
+**/results/**/*.onnx
+**/results/**/*.pt
+
+.fake
+.ionide

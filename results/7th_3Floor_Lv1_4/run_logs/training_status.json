@@ -1,0 +1,308 @@
+{
+    "3Floor_Lv1_4": {
+        "checkpoints": [
+            {
+                "steps": 199956,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-199956.onnx",
+                "reward": 0.8630052114074881,
+                "creation_time": 1626443336.3127005,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-199956.pt"
+                ]
+            },
+            {
+                "steps": 399972,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-399972.onnx",
+                "reward": 0.8819173574447632,
+                "creation_time": 1626444051.6726687,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-399972.pt"
+                ]
+            },
+            {
+                "steps": 599960,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-599960.onnx",
+                "reward": 1.492482657233874,
+                "creation_time": 1626444769.5125153,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-599960.pt"
+                ]
+            },
+            {
+                "steps": 799974,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-799974.onnx",
+                "reward": 1.5506497994065285,
+                "creation_time": 1626445632.2398162,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-799974.pt"
+                ]
+            },
+            {
+                "steps": 999942,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-999942.onnx",
+                "reward": 1.459609180688858,
+                "creation_time": 1626446465.7580466,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-999942.pt"
+                ]
+            },
+            {
+                "steps": 1199967,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1199967.onnx",
+                "reward": 1.1843285461266835,
+                "creation_time": 1626447166.903354,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1199967.pt"
+                ]
+            },
+            {
+                "steps": 1399961,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1399961.onnx",
+                "reward": 1.1367328558117151,
+                "creation_time": 1626448145.8005402,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1399961.pt"
+                ]
+            },
+            {
+                "steps": 1494955,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1494955.onnx",
+                "reward": null,
+                "creation_time": 1626448454.3308184,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1494955.pt"
+                ]
+            },
+            {
+                "steps": 1599989,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1599989.onnx",
+                "reward": 1.0837682895362377,
+                "creation_time": 1626479405.1510956,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1599989.pt"
+                ]
+            },
+            {
+                "steps": 1799968,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1799968.onnx",
+                "reward": null,
+                "creation_time": 1626480023.5897758,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1799968.pt"
+                ]
+            },
+            {
+                "steps": 1999999,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1999999.onnx",
+                "reward": 1.5530086867511272,
+                "creation_time": 1626480701.2278545,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-1999999.pt"
+                ]
+            },
+            {
+                "steps": 2199984,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2199984.onnx",
+                "reward": 1.0676886856555938,
+                "creation_time": 1626481424.5458698,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2199984.pt"
+                ]
+            },
+            {
+                "steps": 2399972,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2399972.onnx",
+                "reward": 1.2052780628204345,
+                "creation_time": 1626482162.8082004,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2399972.pt"
+                ]
+            },
+            {
+                "steps": 2599942,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2599942.onnx",
+                "reward": 1.546183343976736,
+                "creation_time": 1626482844.3784227,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2599942.pt"
+                ]
+            },
+            {
+                "steps": 2799987,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2799987.onnx",
+                "reward": null,
+                "creation_time": 1626483532.1237338,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2799987.pt"
+                ]
+            },
+            {
+                "steps": 2999955,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2999955.onnx",
+                "reward": 1.5055954605340958,
+                "creation_time": 1626484306.1648502,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-2999955.pt"
+                ]
+            },
+            {
+                "steps": 3199943,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3199943.onnx",
+                "reward": 1.5134443104267121,
+                "creation_time": 1626484959.5721667,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3199943.pt"
+                ]
+            },
+            {
+                "steps": 3399970,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3399970.onnx",
+                "reward": 0.972842157818377,
+                "creation_time": 1626485600.835893,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3399970.pt"
+                ]
+            },
+            {
+                "steps": 3599983,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3599983.onnx",
+                "reward": 1.5065506597359974,
+                "creation_time": 1626486577.3076026,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3599983.pt"
+                ]
+            },
+            {
+                "steps": 3799959,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3799959.onnx",
+                "reward": 1.5048416376113891,
+                "creation_time": 1626487202.8375423,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3799959.pt"
+                ]
+            },
+            {
+                "steps": 3999950,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3999950.onnx",
+                "reward": 1.4962164461612701,
+                "creation_time": 1626487941.2305987,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-3999950.pt"
+                ]
+            },
+            {
+                "steps": 4199980,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4199980.onnx",
+                "reward": null,
+                "creation_time": 1626488692.7374501,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4199980.pt"
+                ]
+            },
+            {
+                "steps": 4399983,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4399983.onnx",
+                "reward": 1.5078947097063065,
+                "creation_time": 1626489509.9253585,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4399983.pt"
+                ]
+            },
+            {
+                "steps": 4599974,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4599974.onnx",
+                "reward": 1.1530538126826286,
+                "creation_time": 1626490322.4915497,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4599974.pt"
+                ]
+            },
+            {
+                "steps": 4799945,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4799945.onnx",
+                "reward": 1.5111756443977356,
+                "creation_time": 1626490992.3954804,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4799945.pt"
+                ]
+            },
+            {
+                "steps": 4999967,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4999967.onnx",
+                "reward": 1.5089417695999146,
+                "creation_time": 1626491730.7315662,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-4999967.pt"
+                ]
+            },
+            {
+                "steps": 5199974,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5199974.onnx",
+                "reward": 1.0360283385962248,
+                "creation_time": 1626492522.0174396,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5199974.pt"
+                ]
+            },
+            {
+                "steps": 5399996,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5399996.onnx",
+                "reward": 1.3637374555692077,
+                "creation_time": 1626493330.720846,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5399996.pt"
+                ]
+            },
+            {
+                "steps": 5599991,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5599991.onnx",
+                "reward": 1.3013473153114319,
+                "creation_time": 1626494072.801874,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5599991.pt"
+                ]
+            },
+            {
+                "steps": 5799938,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5799938.onnx",
+                "reward": 1.3855953858448908,
+                "creation_time": 1626494746.6864452,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5799938.pt"
+                ]
+            },
+            {
+                "steps": 5999955,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5999955.onnx",
+                "reward": 1.0784062087535857,
+                "creation_time": 1626495398.415928,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-5999955.pt"
+                ]
+            },
+            {
+                "steps": 6175984,
+                "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-6175984.onnx",
+                "reward": null,
+                "creation_time": 1626496014.8774092,
+                "auxillary_file_paths": [
+                    "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-6175984.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 6175984,
+            "file_path": "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4.onnx",
+            "reward": null,
+            "creation_time": 1626496014.8774092,
+            "auxillary_file_paths": [
+                "results\\7th_3Floor_Lv1_4\\3Floor_Lv1_4\\3Floor_Lv1_4-6175984.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

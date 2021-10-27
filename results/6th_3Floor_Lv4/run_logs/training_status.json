@@ -1,0 +1,281 @@
+{
+    "3Floor_Lv4": {
+        "checkpoints": [
+            {
+                "steps": 199953,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-199953.onnx",
+                "reward": -0.44545041490346193,
+                "creation_time": 1623937340.1062298,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-199953.pt"
+                ]
+            },
+            {
+                "steps": 399973,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-399973.onnx",
+                "reward": -0.2199389273300767,
+                "creation_time": 1623938005.8280673,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-399973.pt"
+                ]
+            },
+            {
+                "steps": 599983,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-599983.onnx",
+                "reward": 0.9654507127900919,
+                "creation_time": 1623938594.8635862,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-599983.pt"
+                ]
+            },
+            {
+                "steps": 799996,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-799996.onnx",
+                "reward": -0.33279259633272884,
+                "creation_time": 1623939156.5109687,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-799996.pt"
+                ]
+            },
+            {
+                "steps": 999981,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-999981.onnx",
+                "reward": null,
+                "creation_time": 1623939730.1265695,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-999981.pt"
+                ]
+            },
+            {
+                "steps": 1199986,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1199986.onnx",
+                "reward": null,
+                "creation_time": 1623940290.05718,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1199986.pt"
+                ]
+            },
+            {
+                "steps": 1399978,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1399978.onnx",
+                "reward": 0.5520148985087872,
+                "creation_time": 1623940854.2022219,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1399978.pt"
+                ]
+            },
+            {
+                "steps": 1559597,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1559597.onnx",
+                "reward": null,
+                "creation_time": 1623941322.8707566,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1559597.pt"
+                ]
+            },
+            {
+                "steps": 1599943,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1599943.onnx",
+                "reward": null,
+                "creation_time": 1623988219.5672152,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1599943.pt"
+                ]
+            },
+            {
+                "steps": 1799993,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1799993.onnx",
+                "reward": 0.08442701795138419,
+                "creation_time": 1623988643.184886,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1799993.pt"
+                ]
+            },
+            {
+                "steps": 1999958,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1999958.onnx",
+                "reward": 0.5751637207965056,
+                "creation_time": 1623989062.8548281,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-1999958.pt"
+                ]
+            },
+            {
+                "steps": 2199972,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2199972.onnx",
+                "reward": 1.997942315414548,
+                "creation_time": 1623990090.9189565,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2199972.pt"
+                ]
+            },
+            {
+                "steps": 2399950,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2399950.onnx",
+                "reward": 0.5554263219237328,
+                "creation_time": 1623990898.46168,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2399950.pt"
+                ]
+            },
+            {
+                "steps": 2599952,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2599952.onnx",
+                "reward": 0.7659401930868626,
+                "creation_time": 1623991624.3289897,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2599952.pt"
+                ]
+            },
+            {
+                "steps": 2799947,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2799947.onnx",
+                "reward": 5.743558029830456,
+                "creation_time": 1623992248.7116022,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2799947.pt"
+                ]
+            },
+            {
+                "steps": 2999962,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2999962.onnx",
+                "reward": 1.2014330713344472,
+                "creation_time": 1623992876.5908294,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-2999962.pt"
+                ]
+            },
+            {
+                "steps": 3199994,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3199994.onnx",
+                "reward": 1.9658670015633106,
+                "creation_time": 1623993658.7123387,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3199994.pt"
+                ]
+            },
+            {
+                "steps": 3223970,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3223970.onnx",
+                "reward": null,
+                "creation_time": 1623993734.3743155,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3223970.pt"
+                ]
+            },
+            {
+                "steps": 3399943,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3399943.onnx",
+                "reward": -0.05564265549182892,
+                "creation_time": 1623994893.3303075,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3399943.pt"
+                ]
+            },
+            {
+                "steps": 3599966,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3599966.onnx",
+                "reward": 0.7099705040454865,
+                "creation_time": 1623995661.4054668,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3599966.pt"
+                ]
+            },
+            {
+                "steps": 3688653,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3688653.onnx",
+                "reward": 0.519582562148571,
+                "creation_time": 1623995896.94977,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3688653.pt"
+                ]
+            },
+            {
+                "steps": 3799982,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3799982.onnx",
+                "reward": -0.14099730551242828,
+                "creation_time": 1624001686.6055264,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3799982.pt"
+                ]
+            },
+            {
+                "steps": 3999964,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3999964.onnx",
+                "reward": -0.7296182662248611,
+                "creation_time": 1624002200.013261,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-3999964.pt"
+                ]
+            },
+            {
+                "steps": 4199968,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4199968.onnx",
+                "reward": 2.084828617051244,
+                "creation_time": 1624002749.8470554,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4199968.pt"
+                ]
+            },
+            {
+                "steps": 4399962,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4399962.onnx",
+                "reward": 1.9195551108568907,
+                "creation_time": 1624003438.9695017,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4399962.pt"
+                ]
+            },
+            {
+                "steps": 4599984,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4599984.onnx",
+                "reward": 0.21225839853286743,
+                "creation_time": 1624003987.5866957,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4599984.pt"
+                ]
+            },
+            {
+                "steps": 4799969,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4799969.onnx",
+                "reward": 0.35915419459342957,
+                "creation_time": 1624004527.9107296,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4799969.pt"
+                ]
+            },
+            {
+                "steps": 4999995,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4999995.onnx",
+                "reward": 1.435113612562418,
+                "creation_time": 1624005069.0704246,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-4999995.pt"
+                ]
+            },
+            {
+                "steps": 5000147,
+                "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-5000147.onnx",
+                "reward": 1.5959008177742362,
+                "creation_time": 1624005069.3439114,
+                "auxillary_file_paths": [
+                    "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-5000147.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000147,
+            "file_path": "results\\6th_3Floor_Lv4\\3Floor_Lv4.onnx",
+            "reward": 1.5959008177742362,
+            "creation_time": 1624005069.3439114,
+            "auxillary_file_paths": [
+                "results\\6th_3Floor_Lv4\\3Floor_Lv4\\3Floor_Lv4-5000147.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
