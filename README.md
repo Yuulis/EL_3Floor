@@ -12,7 +12,7 @@ Using [ML-Agents Release 17](https://github.com/Unity-Technologies/ml-agents/tre
 
 ## 3Floor_Lv1
 ### Environment image
-![3Floor_Lv1 image](.\images\3Floor_Lv1@0.75x.png)
+![3Floor_Lv1 image](.\images\3Floor_Lv1.png)
 ## 3Floor_Lv2
 
 ## 3Floor_Lv4
