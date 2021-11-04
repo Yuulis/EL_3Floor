@@ -45,7 +45,7 @@ ax_Success.legend()
 
 # ReachStair_Floor1
 colorList_2 = {0: "gray", 1: "red", 2: "blue", 3: "yellow", 4: "green"}
-labelName_2 = {0: "Failure", 1: "NE", 2: "NW", 3: "SW", 4: "SE"}
+labelName_2 = {0: "Failure", 1: "1-1", 2: "1-2", 3: "1-3", 4: "1-4"}
 
 for r in set(df_ReachStair1["ReachStair_Floor1"]):
     df2_ReachStair1 = df_ReachStair1[df_ReachStair1["ReachStair_Floor1"] == r]
@@ -58,10 +58,13 @@ ax_ReachStair1.legend()
 
 
 # ReachStair_Floor2
+colorList_3 = {0: "gray", 1: "red", 2: "blue", 3: "yellow", 4: "green"}
+labelName_3 = {0: "Failure", 1: "2-1", 2: "2-2", 3: "2-3", 4: "2-4"}
+
 for r in set(df_ReachStair2["ReachStair_Floor2"]):
     df2_ReachStair2 = df_ReachStair2[df_ReachStair2["ReachStair_Floor2"] == r]
-    c = colorList_2[r]
-    l = labelName_2[r]
+    c = colorList_3[r]
+    l = labelName_3[r]
     ax_ReachStair2.scatter(
         df2_ReachStair2.X, df2_ReachStair2.Z, s=10, color=c, label=l)
 
