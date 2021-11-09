@@ -19,6 +19,8 @@ public class AgentControl_3Floor_Lv4_result : Agent
     Floor3_Settings Floor3_Settings;
     private float timer = 0f;
 
+    public bool RandomStairObstacles;
+
     // Agent
     Rigidbody rBody;
     private int nowFloor;
@@ -82,6 +84,7 @@ public class AgentControl_3Floor_Lv4_result : Agent
     public void SpawnAgent()
     {
         this.transform.localPosition = new Vector3(Random.Range(-19.5f, 19.5f), 4.95f, Random.Range(-14.5f, 14.5f));
+        // this.transform.localPosition = new Vector3(16f, 4.95f, 5f);
         SpawnPosX = this.transform.localPosition.x;
         SpawnPosZ = this.transform.localPosition.z;
     }
@@ -92,7 +95,7 @@ public class AgentControl_3Floor_Lv4_result : Agent
         StairObstacle2.rotation = Quaternion.identity;
         StairObstacle3.rotation = Quaternion.identity;
 
-        if (csvExportScript.Export)
+        if (csvExportScript.Export || !RandomStairObstacles)
         {
             StairObstacle1.localPosition = new Vector3(11f, 4f, -8f);
             StairObstacle2.localPosition = new Vector3(11f, 4f, 15f);
