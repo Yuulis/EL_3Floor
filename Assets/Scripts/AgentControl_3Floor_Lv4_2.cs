@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
+using Random = UnityEngine.Random;
 
 public class AgentControl_3Floor_Lv4_2 : Agent
 {
@@ -27,6 +29,21 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     public Transform StairObstacle2;
     public Transform StairObstacle3;
 
+    // Stairs
+    public Transform Stair1_1;
+    public Transform Stair1_2;
+    public Transform Stair1_3;
+    public Transform Stair1_4;
+    public Transform Stair2_1;
+    public Transform Stair2_2;
+    public Transform Stair2_3;
+    public Transform Stair2_4;
+
+    private int ClosestStair_1F;
+    private int ClosestStair_2F;
+    private int ReachedStair_1F;
+    private int ReachedStair_2F;
+
     // At Initializing
     public override void Initialize()
     {
@@ -41,9 +58,60 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     public void SpawnAgent()
     {
         this.transform.localPosition = new Vector3(Random.Range(-19.5f, 19.5f), 4.75f, Random.Range(-14.5f, 14.5f));
+        CheckClosestStair();
     }
 
-    public void SpawnStairObstacle() 
+    public void CheckClosestStair()
+    {
+        if (nowFloor == 1)
+        {
+            float DisToStair1 = Vector3.Distance(this.transform.localPosition, Stair1_1.localPosition);
+            float DisToStair2 = Vector3.Distance(this.transform.localPosition, Stair1_2.localPosition);
+            float DisToStair3 = Vector3.Distance(this.transform.localPosition, Stair1_3.localPosition);
+            float DisToStair4 = Vector3.Distance(this.transform.localPosition, Stair1_4.localPosition);
+
+            float MinDistance = Math.Min(DisToStair1, Math.Min(DisToStair2, Math.Min(DisToStair3, DisToStair4)));
+            if (MinDistance == DisToStair1) ClosestStair_1F = 1;
+            else if (MinDistance == DisToStair2) ClosestStair_1F = 2;
+            else if (MinDistance == DisToStair3) ClosestStair_1F = 3;
+            else if (MinDistance == DisToStair4) ClosestStair_1F = 4;
+        }
+
+        else if (nowFloor == 2)
+        {
+            float DisToStair1 = Vector3.Distance(this.transform.localPosition, Stair2_1.localPosition);
+            float DisToStair2 = Vector3.Distance(this.transform.localPosition, Stair2_2.localPosition);
+            float DisToStair3 = Vector3.Distance(this.transform.localPosition, Stair2_3.localPosition);
+            float DisToStair4 = Vector3.Distance(this.transform.localPosition, Stair2_4.localPosition);
+
+            float MinDistance = Math.Min(DisToStair1, Math.Min(DisToStair2, Math.Min(DisToStair3, DisToStair4)));
+            if (MinDistance == DisToStair1) ClosestStair_2F = 1;
+            else if (MinDistance == DisToStair2) ClosestStair_2F = 2;
+            else if (MinDistance == DisToStair3) ClosestStair_2F = 3;
+            else if (MinDistance == DisToStair4) ClosestStair_2F = 4;
+        }
+    }
+
+    public void CheckReachedStair(string name)
+    {
+        if (nowFloor == 1)
+        {
+            if (name[9] == '1') ReachedStair_1F = 1;
+            else if (name[9] == '2') ReachedStair_1F = 2;
+            else if (name[9] == '3') ReachedStair_1F = 3;
+            else if (name[9] == '4') ReachedStair_1F = 4;
+        }
+
+        else if (nowFloor == 2)
+        {
+            if (name[9] == '1') ReachedStair_2F = 1;
+            else if (name[9] == '2') ReachedStair_2F = 2;
+            else if (name[9] == '3') ReachedStair_2F = 3;
+            else if (name[9] == '4') ReachedStair_2F = 4;
+        }
+    }
+
+    public void SpawnStairObstacle()
     {
         StairObstacle1.rotation = Quaternion.identity;
         StairObstacle2.rotation = Quaternion.identity;
@@ -51,11 +119,11 @@ public class AgentControl_3Floor_Lv4_2 : Agent
 
         int RandomPosNum1 = Random.Range(1, 8 + 1);
         if (RandomPosNum1 == 1) StairObstacle1.localPosition = new Vector3(11f, 4f, 15f);
-        if (RandomPosNum1 == 2) { StairObstacle1.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle1.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum1 == 2) { StairObstacle1.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle1.Rotate(0f, 180f, 0f); }
         if (RandomPosNum1 == 3) { StairObstacle1.localPosition = new Vector3(-11f, 4f, -15f); StairObstacle1.Rotate(0f, 180f, 0f); }
         if (RandomPosNum1 == 4) StairObstacle1.localPosition = new Vector3(11f, 4f, -8f);
         if (RandomPosNum1 == 5) StairObstacle1.localPosition = new Vector3(11f, 11f, 15f);
-        if (RandomPosNum1 == 6) { StairObstacle1.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle1.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum1 == 6) { StairObstacle1.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle1.Rotate(0f, 180f, 0f); }
         if (RandomPosNum1 == 7) { StairObstacle1.localPosition = new Vector3(-11f, 11f, -15f); StairObstacle1.Rotate(0f, 180f, 0f); }
         if (RandomPosNum1 == 8) StairObstacle1.localPosition = new Vector3(11f, 11f, -8f);
 
@@ -63,11 +131,11 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         while (RandomPosNum2 == RandomPosNum1) RandomPosNum2 = Random.Range(1, 8 + 1);
 
         if (RandomPosNum2 == 1) StairObstacle2.localPosition = new Vector3(11f, 4f, 15f);
-        if (RandomPosNum2 == 2) { StairObstacle2.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle2.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum2 == 2) { StairObstacle2.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle2.Rotate(0f, 180f, 0f); }
         if (RandomPosNum2 == 3) { StairObstacle2.localPosition = new Vector3(-11f, 4f, -15f); StairObstacle2.Rotate(0f, 180f, 0f); }
         if (RandomPosNum2 == 4) StairObstacle2.localPosition = new Vector3(11f, 4f, -8f);
         if (RandomPosNum2 == 5) StairObstacle2.localPosition = new Vector3(11f, 11f, 15f);
-        if (RandomPosNum2 == 6) { StairObstacle2.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle2.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum2 == 6) { StairObstacle2.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle2.Rotate(0f, 180f, 0f); }
         if (RandomPosNum2 == 7) { StairObstacle2.localPosition = new Vector3(-11f, 11f, -15f); StairObstacle2.Rotate(0f, 180f, 0f); }
         if (RandomPosNum2 == 8) StairObstacle2.localPosition = new Vector3(11f, 11f, -8f);
 
@@ -75,11 +143,11 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         while (RandomPosNum3 == RandomPosNum1 || RandomPosNum3 == RandomPosNum2) RandomPosNum3 = Random.Range(1, 8 + 1);
 
         if (RandomPosNum3 == 1) StairObstacle3.localPosition = new Vector3(11f, 4f, 15f);
-        if (RandomPosNum3 == 2) { StairObstacle3.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle3.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum3 == 2) { StairObstacle3.localPosition = new Vector3(-11f, 4f, 8f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 3) { StairObstacle3.localPosition = new Vector3(-11f, 4f, -15f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 4) StairObstacle3.localPosition = new Vector3(11f, 4f, -8f);
         if (RandomPosNum3 == 5) StairObstacle3.localPosition = new Vector3(11f, 11f, 15f);
-        if (RandomPosNum3 == 6) { StairObstacle3.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle3.Rotate(0f, 180f, 0f); } 
+        if (RandomPosNum3 == 6) { StairObstacle3.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 7) { StairObstacle3.localPosition = new Vector3(-11f, 11f, -15f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 8) StairObstacle3.localPosition = new Vector3(11f, 11f, -8f);
     }
@@ -95,6 +163,8 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         this.transform.rotation = Quaternion.identity;
 
         nowFloor = 1;
+        ClosestStair_1F = 0;
+        ClosestStair_2F = 0;
         SpawnAgent();
 
         SpawnStairObstacle();
@@ -137,7 +207,7 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     // Agent's action
     public override void OnActionReceived(ActionBuffers actions)
     {
-        if (onGround) 
+        if (onGround)
         {
             MoveAgent(actions.DiscreteActions);
             if (Water.localPosition.y < 14.0f) Water.Translate(0f, 0.01f, 0f);
@@ -150,7 +220,7 @@ public class AgentControl_3Floor_Lv4_2 : Agent
                 StartCoroutine(
                     GoalScoredSwapGroundMaterial(Floor3_Settings.Failed_Floor, 0.5f));
             }
-            
+
             float DistanceToWater = this.transform.localPosition.y - Water.localPosition.y;
             AddReward(((DistanceToWater / 10f) + (0.15f * nowFloor)) / MaxStep);
         }
@@ -186,18 +256,31 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             // UpStair
             else if (col.gameObject.CompareTag("UpStair"))
             {
-
                 this.rBody.angularVelocity = Vector3.zero;
                 this.rBody.velocity = Vector3.zero;
                 this.transform.rotation = Quaternion.identity;
+
+                CheckReachedStair(col.gameObject.name);
 
                 if (this.transform.localPosition.x > 0 && this.transform.localPosition.z > 0) { this.transform.Translate(-1.0f, 7.0f, 4.0f); this.transform.Rotate(0f, -90.0f, 0f); }
                 else if (this.transform.localPosition.x < 0 && this.transform.localPosition.z > 0) { this.transform.Translate(1.0f, 7.0f, -4.0f); this.transform.Rotate(0f, 90.0f, 0f); }
                 else if (this.transform.localPosition.x < 0 && this.transform.localPosition.z < 0) { this.transform.Translate(1.0f, 7.0f, -4.0f); this.transform.Rotate(0f, 90.0f, 0f); }
                 else if (this.transform.localPosition.x > 0 && this.transform.localPosition.z < 0) { this.transform.Translate(-1.0f, 7.0f, 4.0f); this.transform.Rotate(0f, -90.0f, 0f); }
-                
+
                 nowFloor++;
-                AddReward(0.3f);
+                CheckClosestStair();
+
+                if (nowFloor - 1 == 1)
+                {
+                    if (ClosestStair_1F == ReachedStair_1F) AddReward(0.6f);
+                    else AddReward(0.3f);
+                }
+
+                else if (nowFloor - 1 == 2)
+                {
+                    if (ClosestStair_2F == ReachedStair_2F) AddReward(0.6f);
+                    else AddReward(0.3f);
+                }
             }
 
             // DownStair
