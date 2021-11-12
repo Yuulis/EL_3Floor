@@ -16,6 +16,8 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     Renderer Floor3Renderer;
     Floor3_Settings Floor3_Settings;
 
+    float timer = 0f;
+
     // Agent
     Rigidbody rBody;
     private int nowFloor;
@@ -28,6 +30,8 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     public Transform StairObstacle1;
     public Transform StairObstacle2;
     public Transform StairObstacle3;
+
+    private List<bool> StairObstaclesFlag;
 
     // Stairs
     public Transform Stair1_1;
@@ -43,6 +47,8 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     private int ClosestStair_2F;
     private int ReachedStair_1F;
     private int ReachedStair_2F;
+
+    private List<float> StairsDistance;
 
     // At Initializing
     public override void Initialize()
@@ -70,11 +76,22 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             float DisToStair3 = Vector3.Distance(this.transform.localPosition, Stair1_3.localPosition);
             float DisToStair4 = Vector3.Distance(this.transform.localPosition, Stair1_4.localPosition);
 
-            float MinDistance = Math.Min(DisToStair1, Math.Min(DisToStair2, Math.Min(DisToStair3, DisToStair4)));
-            if (MinDistance == DisToStair1) ClosestStair_1F = 1;
-            else if (MinDistance == DisToStair2) ClosestStair_1F = 2;
-            else if (MinDistance == DisToStair3) ClosestStair_1F = 3;
-            else if (MinDistance == DisToStair4) ClosestStair_1F = 4;
+            for (int i = 1; i <= 4; i++)
+            {
+                if (!StairObstaclesFlag[i])
+                {
+                    if (i == 1) StairsDistance[i] = DisToStair1;
+                    if (i == 2) StairsDistance[i] = DisToStair2;
+                    if (i == 3) StairsDistance[i] = DisToStair3;
+                    if (i == 4) StairsDistance[i] = DisToStair4;
+                }
+            }
+            StairsDistance.Sort();
+
+            if (StairsDistance[0] == DisToStair1) ClosestStair_1F = 1;
+            else if (StairsDistance[0] == DisToStair2) ClosestStair_1F = 2;
+            else if (StairsDistance[0] == DisToStair3) ClosestStair_1F = 3;
+            else if (StairsDistance[0] == DisToStair4) ClosestStair_1F = 4;
         }
 
         else if (nowFloor == 2)
@@ -84,11 +101,22 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             float DisToStair3 = Vector3.Distance(this.transform.localPosition, Stair2_3.localPosition);
             float DisToStair4 = Vector3.Distance(this.transform.localPosition, Stair2_4.localPosition);
 
-            float MinDistance = Math.Min(DisToStair1, Math.Min(DisToStair2, Math.Min(DisToStair3, DisToStair4)));
-            if (MinDistance == DisToStair1) ClosestStair_2F = 1;
-            else if (MinDistance == DisToStair2) ClosestStair_2F = 2;
-            else if (MinDistance == DisToStair3) ClosestStair_2F = 3;
-            else if (MinDistance == DisToStair4) ClosestStair_2F = 4;
+            for (int i = 5; i <= 8; i++)
+            {
+                if (!StairObstaclesFlag[i])
+                {
+                    if (i == 5) StairsDistance[i] = DisToStair1;
+                    if (i == 6) StairsDistance[i] = DisToStair2;
+                    if (i == 7) StairsDistance[i] = DisToStair3;
+                    if (i == 8) StairsDistance[i] = DisToStair4;
+                }
+            }
+            StairsDistance.Sort();
+
+            if (StairsDistance[0] == DisToStair1) ClosestStair_2F = 1;
+            else if (StairsDistance[0] == DisToStair2) ClosestStair_2F = 2;
+            else if (StairsDistance[0] == DisToStair3) ClosestStair_2F = 3;
+            else if (StairsDistance[0] == DisToStair4) ClosestStair_2F = 4;
         }
     }
 
@@ -150,6 +178,10 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         if (RandomPosNum3 == 6) { StairObstacle3.localPosition = new Vector3(-11f, 11f, 8f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 7) { StairObstacle3.localPosition = new Vector3(-11f, 11f, -15f); StairObstacle3.Rotate(0f, 180f, 0f); }
         if (RandomPosNum3 == 8) StairObstacle3.localPosition = new Vector3(11f, 11f, -8f);
+
+        StairObstaclesFlag[RandomPosNum1] = true;
+        StairObstaclesFlag[RandomPosNum2] = true;
+        StairObstaclesFlag[RandomPosNum3] = true;
     }
 
     // When Episode begins
@@ -165,8 +197,16 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         nowFloor = 1;
         ClosestStair_1F = 0;
         ClosestStair_2F = 0;
-        SpawnAgent();
 
+        StairsDistance = new List<float>();
+        StairObstaclesFlag = new List<bool>();
+        for (int i = 0; i < 10; i++)
+        {
+            StairsDistance.Add(Mathf.Infinity);
+            StairObstaclesFlag.Add(false);
+        }
+
+        SpawnAgent();
         SpawnStairObstacle();
 
         Water.localPosition = new Vector3(-25.0f, -10.0f, -25.0f);
@@ -219,6 +259,21 @@ public class AgentControl_3Floor_Lv4_2 : Agent
                 EndEpisode();
                 StartCoroutine(
                     GoalScoredSwapGroundMaterial(Floor3_Settings.Failed_Floor, 0.5f));
+            }
+
+            // When Agent is on the 3rd floor
+            if (nowFloor == 3) {
+                timer += Time.deltaTime;
+            }
+            else timer = 0f;
+
+            if (timer > 5.00f)
+            {
+                AddReward(0.2f);
+
+                EndEpisode();
+                StartCoroutine(
+                    GoalScoredSwapGroundMaterial(Floor3_Settings.Success_Floor, 0.5f));
             }
 
             float DistanceToWater = this.transform.localPosition.y - Water.localPosition.y;
