@@ -6,6 +6,7 @@ using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class AgentControl_3Floor_Lv4_2 : Agent
 {
@@ -20,7 +21,7 @@ public class AgentControl_3Floor_Lv4_2 : Agent
 
     // Agent
     Rigidbody rBody;
-    private int nowFloor;
+    public int nowFloor;
     public float AgentSpeed = 0.6f;
 
     // Water
@@ -50,6 +51,13 @@ public class AgentControl_3Floor_Lv4_2 : Agent
 
     private List<float> StairsDistance;
 
+    // For results
+    public bool ShowResults;
+    public bool DataExport;
+
+    public GameObject DataCounter;
+    DataCounter DataCounterScript;
+
     // At Initializing
     public override void Initialize()
     {
@@ -58,6 +66,19 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         this.rBody = GetComponent<Rigidbody>();
         Floor3Renderer = Floor3.GetComponent<Renderer>();
         Floor3Material = Floor3Renderer.material;
+
+        DataCounterScript = DataCounter.GetComponent<DataCounter>();
+
+        DataCounterScript.EpisodeCounter = 0;
+        DataCounterScript.SuccessCounter = 0;
+        DataCounterScript.Reach1FloorCounter = 0;
+        DataCounterScript.Reach2FloorCounter = 0;
+        DataCounterScript.Reach3FloorCounter = 0;
+        DataCounterScript.SuccessAvarageWaterHeightCounter = 0f;
+        DataCounterScript.FailAvarageWaterHeightCounter = 0f;
+
+        if (ShowResults) Time.timeScale = 20;
+        else Time.timeScale = 1;
     }
 
     // Agent Spawn
@@ -65,6 +86,14 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     {
         this.transform.localPosition = new Vector3(Random.Range(-19.5f, 19.5f), 4.75f, Random.Range(-14.5f, 14.5f));
         CheckClosestStair();
+    }
+
+    // Last Floor check
+    public void LastFloorCheck()
+    {
+        if (nowFloor == 1) DataCounterScript.Reach1FloorCounter++;
+        if (nowFloor == 2) DataCounterScript.Reach2FloorCounter++;
+        if (nowFloor == 3) DataCounterScript.Reach3FloorCounter++;
     }
 
     public void CheckClosestStair()
@@ -210,6 +239,11 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         SpawnStairObstacle();
 
         Water.localPosition = new Vector3(-25.0f, -10.0f, -25.0f);
+
+        if (ShowResults)
+        {
+            DataCounterScript.TextSet();
+        }
     }
 
     // Get observations (size = 4)
@@ -256,13 +290,22 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             if (this.transform.localPosition.y < Water.localPosition.y)
             {
                 AddReward(-1.0f);
+
+                if (ShowResults)
+                {
+                    LastFloorCheck();
+                    DataCounterScript.EpisodeCounter++;
+                    DataCounterScript.FailAvarageWaterHeightCounter += Water.localPosition.y;
+                }
+
                 EndEpisode();
                 StartCoroutine(
                     GoalScoredSwapGroundMaterial(Floor3_Settings.Failed_Floor, 0.5f));
             }
 
             // When Agent is on the 3rd floor
-            if (nowFloor == 3) {
+            if (nowFloor == 3)
+            {
                 timer += Time.deltaTime;
             }
             else timer = 0f;
@@ -270,6 +313,14 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             if (timer > 5.00f)
             {
                 AddReward(0.2f);
+
+                if (ShowResults)
+                {
+                    LastFloorCheck();
+                    DataCounterScript.EpisodeCounter++;
+                    DataCounterScript.SuccessCounter++;
+                    DataCounterScript.SuccessAvarageWaterHeightCounter += Water.localPosition.y;
+                }
 
                 EndEpisode();
                 StartCoroutine(
@@ -303,6 +354,14 @@ public class AgentControl_3Floor_Lv4_2 : Agent
             if (col.gameObject.CompareTag("Wall") || col.gameObject.CompareTag("Obstacle"))
             {
                 AddReward(-0.7f);
+
+                if (ShowResults)
+                {
+                    LastFloorCheck();
+                    DataCounterScript.EpisodeCounter++;
+                    DataCounterScript.FailAvarageWaterHeightCounter += Water.localPosition.y;
+                }
+
                 EndEpisode();
                 StartCoroutine(
                 GoalScoredSwapGroundMaterial(Floor3_Settings.Failed_Floor, 0.5f));

@@ -14,7 +14,7 @@ public class DataCounter : MonoBehaviour
             Reach3FloorCounter;
 
     public float SuccessAvarageWaterHeightCounter,
-            FailAvarageWaterHeightCounter;
+                FailAvarageWaterHeightCounter;
 
     public GameObject EpisodeCount,
                     SuccessCount,
@@ -41,11 +41,6 @@ public class DataCounter : MonoBehaviour
         Reach3FloorCountText = Reach3FloorCount.GetComponent<TextMeshProUGUI>();
         SuccessAvarageWaterHeightText = SuccessAvarageWaterHeight.GetComponent<TextMeshProUGUI>();
         FailAvarageWaterHeightText = FailAvarageWaterHeight.GetComponent<TextMeshProUGUI>();
-    }
-
-    void Update()
-    {
-        
     }
 
     // Text
