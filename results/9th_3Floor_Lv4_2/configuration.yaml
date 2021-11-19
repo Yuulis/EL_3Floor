@@ -43,8 +43,8 @@ behaviors:
         encoding_size: null
     init_path: null
     keep_checkpoints: 100
-    checkpoint_interval: 200000
-    max_steps: 10000000
+    checkpoint_interval: 500000
+    max_steps: 20000000
     time_horizon: 64
     summary_freq: 10000
     threaded: true
@@ -69,7 +69,7 @@ checkpoint_settings:
   run_id: 9th_3Floor_Lv4_2
   initialize_from: null
   load_model: false
-  resume: false
+  resume: true
   force: false
   train_model: false
   inference: false

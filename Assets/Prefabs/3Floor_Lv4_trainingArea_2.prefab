@@ -15663,7 +15663,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 5022602860645237092, guid: 8eff1a55c84da3d4eb15270922358d04, type: 3}
+  m_Model: {fileID: 5022602860645237092, guid: 306e472538f76e843be430dc8c8e6178, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: 3Floor_Lv4_2
@@ -15702,6 +15702,7 @@ MonoBehaviour:
   hasUpgradedFromAgentParameters: 1
   MaxStep: 3000
   Floor3: {fileID: 1616070905993203723}
+  nowFloor: 0
   AgentSpeed: 0.6
   Water: {fileID: 1370583065388488815}
   StairObstacle1: {fileID: 8646172158284195736}
@@ -15715,7 +15716,7 @@ MonoBehaviour:
   Stair2_2: {fileID: 1616070906488086224}
   Stair2_3: {fileID: 1616070906603831028}
   Stair2_4: {fileID: 1616070905653012163}
-  ShowResults: 1
+  ShowResults: 0
   DataExport: 0
   DataCounter: {fileID: 0}
 --- !u!1 &1616070905649676789

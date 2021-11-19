@@ -55,6 +55,7 @@ public class AgentControl_3Floor_Lv4_2 : Agent
     public bool ShowResults;
     public bool DataExport;
 
+    [HideInInspector]
     public GameObject DataCounter;
     DataCounter DataCounterScript;
 
@@ -67,17 +68,20 @@ public class AgentControl_3Floor_Lv4_2 : Agent
         Floor3Renderer = Floor3.GetComponent<Renderer>();
         Floor3Material = Floor3Renderer.material;
 
-        DataCounterScript = DataCounter.GetComponent<DataCounter>();
+        if (ShowResults) {
+            DataCounter = GameObject.Find("DataCounter");
+            DataCounterScript = DataCounter.GetComponent<DataCounter>();
 
-        DataCounterScript.EpisodeCounter = 0;
-        DataCounterScript.SuccessCounter = 0;
-        DataCounterScript.Reach1FloorCounter = 0;
-        DataCounterScript.Reach2FloorCounter = 0;
-        DataCounterScript.Reach3FloorCounter = 0;
-        DataCounterScript.SuccessAvarageWaterHeightCounter = 0f;
-        DataCounterScript.FailAvarageWaterHeightCounter = 0f;
+            DataCounterScript.EpisodeCounter = 0;
+            DataCounterScript.SuccessCounter = 0;
+            DataCounterScript.Reach1FloorCounter = 0;
+            DataCounterScript.Reach2FloorCounter = 0;
+            DataCounterScript.Reach3FloorCounter = 0;
+            DataCounterScript.SuccessAvarageWaterHeightCounter = 0f;
+            DataCounterScript.FailAvarageWaterHeightCounter = 0f;
 
-        if (ShowResults) Time.timeScale = 20;
+            Time.timeScale = 30;
+        }
         else Time.timeScale = 1;
     }
 
