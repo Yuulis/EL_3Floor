@@ -82,7 +82,6 @@ public class AgentControl_3Floor_Lv4_2 : Agent
 
             Time.timeScale = 30;
         }
-        else Time.timeScale = 1;
     }
 
     // Agent Spawn

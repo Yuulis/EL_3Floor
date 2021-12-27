@@ -69,7 +69,7 @@ public class AgentControl_3Floor_Lv4_result : Agent
         DataCounterScript.SuccessAvarageWaterHeightCounter = 0f;
         DataCounterScript.FailAvarageWaterHeightCounter = 0f;
 
-        Time.timeScale = 10;
+        // Time.timeScale = 10;
     }
 
     // Last Floor check
